@@ -1,6 +1,7 @@
 version: "3"
 services:
     fluentd:
+        user: root
         image: fluent/fluentd:v1.11-debian
         volumes:
             - /var/lib/docker/containers:/fluentd/log/containers
